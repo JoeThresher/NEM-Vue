@@ -42,10 +42,10 @@ function toggleTheme() {
                   >
                 </li>
                 <li>
-                  <RouterLink to="src/pages/locals.html">Locals</RouterLink>
+                  <RouterLink to="/locals">Locals</RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="src/pages/regionals.html">Regionals</RouterLink>
+                  <RouterLink to="/regionals">Regionals</RouterLink>
                 </li>
               </ul>
             </details>
