@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 let storedTheme =
   localStorage.getItem('theme') ||
   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
@@ -23,9 +24,9 @@ function toggleTheme() {
       <nav>
         <ul>
           <li>
-            <a href="/NEM-Mockup" class="contrast"
+            <RouterLink to="/" class="contrast"
               ><img src="/src/assets/NEM.jpg" class="header-logo" alt="Logo"
-            /></a>
+            /></RouterLink>
           </li>
         </ul>
         <ul>
@@ -41,10 +42,10 @@ function toggleTheme() {
                   >
                 </li>
                 <li>
-                  <a href="src/pages/locals.html">Locals</a>
+                  <RouterLink to="src/pages/locals.html">Locals</RouterLink>
                 </li>
                 <li>
-                  <a href="src/pages/regionals.html">Regionals</a>
+                  <RouterLink to="src/pages/regionals.html">Regionals</RouterLink>
                 </li>
               </ul>
             </details>
@@ -87,10 +88,6 @@ function toggleTheme() {
 
 <style scoped>
 .bar {
-  background-color: var(--pico-background-color);
-}
-
-header {
   z-index: 2;
   position: sticky;
   top: 0;
