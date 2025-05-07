@@ -26,7 +26,10 @@
     <div class="container">
       <div class="grid">
         <div class="about-image">
-          <p>(an image will go here)</p>
+          <img
+            src="../assets/grouppic1.jpg"
+            alt="A group picture of many New England Melee players and organizers"
+          />
         </div>
         <div class="about-text">
           <h2>About</h2>
@@ -75,5 +78,18 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 600px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: var(--pico-border-radius);
 }
 </style>

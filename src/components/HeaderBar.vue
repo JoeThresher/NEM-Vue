@@ -53,7 +53,7 @@ function toggleTheme() {
           <li>
             <button
               @click="toggleTheme"
-              class="theme-toggle"
+              class="theme-toggle outline contrast"
               id="theme-toggle"
               type="button"
               title="Toggle theme"
@@ -108,5 +108,6 @@ function toggleTheme() {
 
 #theme-toggle {
   color: var(--pico-contrast);
+  background-color: var(--pico-background-color);
 }
 </style>
