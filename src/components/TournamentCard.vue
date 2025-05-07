@@ -1,43 +1,52 @@
+<script setup>
+import tournaments from '../data/tournaments.json'
+
+import prodigyImage from '../assets/prodigy.jpg'
+
+const name = tournaments.locals[0].name
+const image = getImage(name)
+const description = tournaments.locals[0].description
+const location = tournaments.locals[0].location
+const time = tournaments.locals[0].time
+const startgg = tournaments.locals[0].startgg
+const googlemaps = tournaments.locals[0].googlemaps
+const contact = tournaments.locals[0].contact
+
+function getImage(tournamentName) {
+  switch (tournamentName) {
+    case 'Prodigy Smash Weekly':
+      return prodigyImage
+    default:
+      return null
+  }
+}
+</script>
+
 <template>
   <article id="prodigy">
     <div class="grid">
       <div class="left">
-        <img src="../assets/prodigy.jpg" alt="Image of the Prodigy venue" />
+        <img :src="image" alt="Image for tournament" />
       </div>
       <div class="right">
-        <h2>Prodigy Smash Weekly</h2>
+        <h2>{{ name }}</h2>
         <p>
-          Prodigy Smash Weekly is a weekly tournament in western Massachusetts every Friday nights.
-          Also features Smash Ultimate and Rivals of Aether 2 brackets.
+          {{ description }}
         </p>
         <div class="details">
           <p>
-            <strong>Location:</strong> 116 Pleasant St, Easthampton, MA 01027<br /><strong
-              >Time:</strong
-            >
-            Friday nights, doors 6:00pm, bracket 7:00pm
+            <strong>Location:</strong> {{ location }}<br /><strong>Time:</strong>
+            {{ time }}
           </p>
         </div>
         <div class="grid local-links">
-          <a
-            href="https://start.gg/ProdigySmash"
-            class="outline secondary"
-            role="button"
-            target="_blank"
+          <a :href="startgg" class="outline secondary" role="button" target="_blank"
             ><img src="../assets/startgg.svg" alt="Start GG logo" /> Start.gg</a
           >
-          <a
-            href="https://maps.app.goo.gl/rXsv7r5SBdKJyKme8"
-            class="outline secondary"
-            role="button"
-            target="_blank"
+          <a :href="googlemaps" class="outline secondary" role="button" target="_blank"
             ><img src="../assets/googlemaps.svg" alt="Google Maps logo" /> Location</a
           >
-          <a
-            href="https://discord.gg/CAdcxP5sH3"
-            class="outline secondary"
-            role="button"
-            target="_blank"
+          <a :href="contact" class="outline secondary" role="button" target="_blank"
             ><img src="../assets/envelope.svg" alt="Envelope logo" /> Contact</a
           >
         </div>
@@ -47,7 +56,6 @@
 </template>
 
 <style scoped>
-h1,
 h2 {
   text-align: center;
 }

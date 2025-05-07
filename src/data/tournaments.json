@@ -1,0 +1,13 @@
+{
+  "locals": [
+    {
+      "name": "Prodigy Smash Weekly",
+      "description": "Prodigy Smash Weekly is a weekly tournament in western Massachusetts every Friday nights. Also features Smash Ultimate and Rivals of Aether 2 brackets.",
+      "location": "116 Pleasant St, Easthampton, MA 01027",
+      "time": "Friday nights, doors 6:00pm, bracket 7:00pm",
+      "startgg": "https://start.gg/ProdigySmash",
+      "googlemaps": "https://maps.app.goo.gl/rXsv7r5SBdKJyKme8",
+      "contact": "https://discord.gg/CAdcxP5sH3"
+    }
+  ]
+}

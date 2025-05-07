@@ -13,26 +13,7 @@ import TournamentCard from './TournamentCard.vue'
 </template>
 
 <style scoped>
-h1,
-h2 {
+h1 {
   text-align: center;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.left img {
-  border-radius: var(--pico-border-radius);
-  border-color: var(--pico-secondary-border);
-  border-style: solid;
-  border-width: var(--pico-border-width);
-}
-
-a img {
-  width: 1em;
-  height: 1em;
 }
 </style>
