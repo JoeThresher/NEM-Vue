@@ -35,11 +35,7 @@ function toggleTheme() {
               <summary>Tournaments</summary>
               <ul dir="rtl">
                 <li>
-                  <a
-                    href="https://calendar.google.com/calendar/u/0/embed?src=86oup09opi66vbhshrftu4uijs@group.calendar.google.com&ctz=America/New_York"
-                    target="_blank"
-                    >Calendar</a
-                  >
+                  <RouterLink to="/calendar">Calendar</RouterLink>
                 </li>
                 <li>
                   <RouterLink to="/locals">Locals</RouterLink>
