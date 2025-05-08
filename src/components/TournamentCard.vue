@@ -26,7 +26,7 @@ function getImage(tournamentName) {
   <article id="prodigy">
     <div class="grid">
       <div class="left">
-        <img :src="image" alt="Image for tournament" />
+        <img :src="image" alt="No image found" />
       </div>
       <div class="right">
         <h2>{{ name }}</h2>
@@ -66,11 +66,22 @@ h2 {
   justify-content: space-around;
 }
 
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .left img {
   border-radius: var(--pico-border-radius);
   border-color: var(--pico-secondary-border);
   border-style: solid;
   border-width: var(--pico-border-width);
+  line-height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a img {
