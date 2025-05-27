@@ -1,6 +1,17 @@
 # NEM-Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+This was a project I started as a potential design for a New England Melee website, using Vue.js and PicoCSS.
+
+## This project is effectively abandoned
+
+Another project was used for the website instead. I am keeping this repo on GitHub for my own and others' reference.
+
+## Use this as a reference for:
+
+- Vue
+- Vue Router
+- PicoCSS
+- PicoCSS light/dark mode toggle with toggles.dev button
 
 ## Recommended IDE Setup
 
